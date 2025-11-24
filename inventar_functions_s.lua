@@ -1,4 +1,4 @@
-local function isPlatzEmpty(player,tasche,platz)
+﻿local function isPlatzEmpty(player,tasche,platz)
 	local id = getElementData(player,"Item_"..tasche,platz.."_id")
 	if(id) then
 		return false

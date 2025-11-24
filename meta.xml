@@ -1,0 +1,92 @@
+﻿<meta>
+    <info author="Tockra" version="1.1.1" type="Misc" name="Inventory (full)" description="A grafical inventory." />
+    
+    <!-- Файлы изображений -->
+    <file src="images/rucksackIcon.png" />
+    <file src="images/schluesselbund.png" />
+    <file src="images/gun.png" />
+    <file src="images/portmonai.png" />
+    <file src="images/closeinv.png" />
+    <file src="images/closeinvS.png" />
+    <file src="images/moveinv.png" />
+    <file src="images/moveinvS.png" />
+    <file src="images/reset.png" />
+    <file src="images/resetS.png" />
+    <file src="images/infoblubf.png" />
+    
+    <!-- Изображения предметов -->
+    <file src="images/items/ECKarte.png" />
+    <file src="images/items/Geld.png" />
+    <file src="images/items/weapons/AK-47.png" />
+    <file src="images/items/weapons/Baseballschlaeger.png" />
+    <file src="images/items/weapons/Billiard Koe.png" />
+    <file src="images/items/weapons/Blumen.png" />
+    <file src="images/items/weapons/Countryschrotflinte.png" />
+    <file src="images/items/weapons/Desert Eagle.png" />
+    <file src="images/items/weapons/Digitalkamera.png" />
+    <file src="images/items/weapons/Fallschirm.png" />
+    <file src="images/items/weapons/Feuerloescher.png" />
+    <file src="images/items/weapons/Flammenwerfer.png" />
+    <file src="images/items/weapons/Gehstock.png" />
+    <file src="images/items/weapons/Golfschlaeger.png" />
+    <file src="images/items/weapons/Granate.png" />
+    <file src="images/items/weapons/Infrarotsichtgeraet.png" />
+    <file src="images/items/weapons/Katana.png" />
+    <file src="images/items/weapons/Kettensaege.png" />
+    <file src="images/items/weapons/Kurzer Dildo.png" />
+    <file src="images/items/weapons/Langer lila Dildo.png" />
+    <file src="images/items/weapons/M4.png" />
+    <file src="images/items/weapons/Messer.png" />
+    <file src="images/items/weapons/Molotov Cocktails.png" />
+    <file src="images/items/weapons/MP5.png" />
+    <file src="images/items/weapons/Nachtsichtgeraet.png" />
+    <file src="images/items/weapons/Pistole.png" />
+    <file src="images/items/weapons/Raketenwerfer.png" />
+    <file src="images/items/weapons/Rucksackbomben.png" />
+    <file src="images/items/weapons/Rucksackbombenzuender.png" />
+    <file src="images/items/weapons/Sawn-Off Schrotflinte.png" />
+    <file src="images/items/weapons/Schalldaempferpistole.png" />
+    <file src="images/items/weapons/Schaufel.png" />
+    <file src="images/items/weapons/Schlagring.png" />
+    <file src="images/items/weapons/Schlagstock.png" />
+    <file src="images/items/weapons/Schrotflinte.png" />
+    <file src="images/items/weapons/Sniper.png" />
+    <file src="images/items/weapons/SPAZ-12 Gefechtsschrotflinte.png" />
+    <file src="images/items/weapons/Spraydose.png" />
+    <file src="images/items/weapons/TEC-9.png" />
+    <file src="images/items/weapons/Traenengas.png" />
+    <file src="images/items/weapons/Uzi.png" />
+    <file src="images/items/weapons/Vibrator.png" />
+    <file src="images/items/weapons/Waermelenkraketenwerfer.png" />
+    
+    <!-- SQL файл -->
+    <file src="inventar.sql" />
+    
+    <!-- Серверные скрипты -->
+    <script src="functions/functions_s.lua" type="server" />
+    <script src="mysql_connect.lua" type="server" />
+    <script src="mysql_save.lua" type="server" />
+    <script src="inventar_functions_s.lua" type="server" />
+    <script src="inventar_main_s.lua" type="server" />
+    <script src="inventar_worldItems_main_s.lua" type="server" />
+    <script src="inventar_weapons_functions_s.lua" type="server" />
+    
+    <!-- Клиентские скрипты -->
+    <script src="functions/functions_c.lua" type="client" />
+    <script src="client/inventar_main_c.lua" type="client" />
+    <script src="client/inventar_worldItems_main_c.lua" type="client" />
+    <script src="client/inventar_buttonevents_c.lua" type="client" />
+    <script src="client/inventar_itemdef_c.lua" type="client" />
+    
+    <!-- Экспорт функций -->
+    <export function="getConnection" type="server" />
+    <export function="isDatabaseConnected" type="server" />
+    <export function="dbExecAsync" type="server" />
+    <export function="dbQueryAsync" type="server" />
+    <export function="getPlayerItems" type="server" />
+    <export function="hasPlayerItem" type="server" />
+    <export function="givePlayerItem" type="server" />
+	<export function="createWorldItem" type="server" />
+	<export function="pickupWorldItem" type="server" />
+	<export function="loadWorldItems" type="server" />
+</meta>
